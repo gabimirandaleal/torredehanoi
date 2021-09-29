@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/./assets/css/reset.css">
+    <link rel="stylesheet" href="/./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="titulo">
+            <span>Torre de Hanoi</span>
+        </div>
+        <button class="nivel_button dificuldade">ESCOLHER DIFICULDADE</button>
+    </header>
+
+
+    <div class="varetas">
+
+        <div class="vareta" id="start">
+            <div class="disco um" draggable="true"></div>
+            <div class="disco dois" draggable="true"></div>
+            <div class="disco tres" draggable="true"></div>
+        </div>
+        <div class="vareta" id="offset">
+        </div>
+        <div class="vareta" id="end">
+        </div>
+        <div class="break"></div>
+        <div class="base">
+            <button type="button" class="reset_button">Reset</button>
+            <p class="contador">Nº of moves: <span class="contador" id="counter"></span></p>
+        </div>
+    </div>
+    <div class="pop">
+        <div class="popup-winner">
+            <button type="button" class="close-winner">X</button>
+            <span class="winner">Winner!!</span>
+        </div>
+        <div class="popup-nivel">
+            <span class="nivel">Selecione o nível:</span>
+            <button type="button" class="nivel_button" id="easy">Easy</button>
+            <button type="button" class="nivel_button" id="normal">Normal</button>
+            <button type="button" class="nivel_button" id="hard">Hard</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/DragDropTouch.js"></script>
+    <script src="./assets/js/script.js "></script>
+</body>
+
+</html>

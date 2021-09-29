@@ -1,0 +1,257 @@
+.varetas {
+    display: none;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+body {
+    font-family: 'Gemunu Libre', sans-serif;
+    background-image: url(../img/BackTorre.png);
+    background-size: 800px;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 48px;
+    text-shadow: 3px -5px 5px rgba(0, 0, 0, 0.50);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-escolherdificuldade {
+    width: 150px;
+    height: 40px;
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.titulo {
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25) inset;
+    width: 250px;
+    height: 66px;
+    background-color: #c4c4c4;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.break {
+    width: 100%
+}
+
+.base {
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #995300;
+    box-shadow: 10px -15px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.vareta {
+    height: 200px;
+    width: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 10px -15px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.disco {
+    width: 60px;
+    height: 20px;
+    background-color: blue;
+    margin-top: 1px;
+    border-radius: 15px;
+    box-shadow: -4px 4px 4px 5px rgba(0, 0, 0, 0.30) inset;
+}
+
+.disco.um {
+    width: 90px;
+    background-color: red;
+}
+
+.disco.dois {
+    width: 75px;
+    background-color: green;
+}
+
+.disco.quatro {
+    width: 50px;
+    background-color: deeppink;
+}
+
+.disco.cinco {
+    width: 40px;
+    background-color: yellow;
+}
+
+.zoneOn {
+    background-color: rgba(0, 0, 0, 0.289)
+}
+
+.isMove {
+    cursor: move;
+    opacity: 0.3;
+}
+
+.over {
+    background-color: rgba(79, 78, 78, 0.923);
+}
+
+
+/* MENSAGENS */
+
+.pop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+
+/* MENSAGEM VITORIA */
+
+.popup-winner {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 80%;
+    background-color: rgba(79, 78, 78, 0.4);
+    border-radius: 15px;
+    position: relative;
+    top: -50px;
+}
+
+.winner {
+    font-size: 84px;
+    color: darkred;
+    text-shadow: 5px -5px 2px white;
+    text-decoration: underline;
+}
+
+.close-winner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    background-color: darkred;
+}
+
+.close-winner:hover {
+    cursor: pointer;
+}
+
+.winner--show {
+    display: flex;
+}
+
+
+/* MENSAGEM NÍVEL */
+
+.popup-nivel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30%;
+    width: 80%;
+    background-color: rgba(79, 78, 78, 0.4);
+    border-radius: 15px;
+    position: relative;
+    top: -50px;
+}
+
+.nivel {
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-shadow: 2px -2px 2px white;
+}
+
+.nivel_button {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 30px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
+    text-shadow: 2px -2px 2px white;
+}
+
+.nivel_button:hover {
+    color: darkred;
+    background-color: gray;
+    transition: 0.4s;
+}
+
+.nivel_button:active {
+    color: black;
+    background-color: lightgray;
+    transition: 0.4s;
+    border: black 2px solid;
+}
+
+.nivel--show {
+    display: flex;
+}
+
+.dificuldade {
+    margin-top: 30px;
+    display: none;
+    font-size: 0.5em;
+    width: 150px;
+    background-color: grey;
+}
+
+
+/* BOTAO RESET */
+
+.reset_button {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 20px;
+    background-color: lightgray;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 2px;
+    width: 150px;
+    text-shadow: 2px -2px 2px white;
+}
+
+.reset_button:hover {
+    background-color: lightgray;
+    border: black 2px solid;
+    transition: 0.4s;
+}
+
+.reset_button:active {
+    background-color: gray;
+    color: black;
+    transition: 0.4s;
+}
