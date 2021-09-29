@@ -14,6 +14,7 @@ function deixarNone() {
     reset()
 }
 
+
 const checkSize = (ramroad, currentDisc) => {
     const discAbove = ramroad.children[ramroad.children.length - 1]
     return currentDisc.clientWidth > discAbove.clientWidth
